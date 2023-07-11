@@ -1,0 +1,40 @@
+package giris;
+import java.util.Scanner;
+public class class3 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int n1,n2;
+        System.out.print("İlk sayıyı gir: ");
+        n1 = input.nextInt();
+        System.out.println("İkinci sayıyı gir: ");
+        n2 = input.nextInt();
+        System.out.println("Hangi işlem yapmak istiyorsanız onu seçin: \n 1-Toplama \n 2-Çıkarma \n 3-Çarpma \n 4-Bölme");
+        int islem = input.nextInt();
+        int toplama,cikarma,carpma,bolme;
+        toplama = n1 + n2;
+        cikarma = n1 - n2;
+        carpma = n1 * n2;
+        bolme = n1 / n2;
+
+        switch (islem){
+            case 1:
+                System.out.println("Sonuç: "+toplama);
+                break;
+            case 2:
+                System.out.println("Sonuç: "+cikarma);
+                break;
+
+            case 3:
+                System.out.println("Sonuç: "+carpma);
+                break;
+            case 4:
+                System.out.println("Sonuç: "+bolme);
+                break;
+            default:
+                System.out.println("Yanlış değer girdiniz.");
+
+        }
+                        }
+    }
+
+
